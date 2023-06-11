@@ -15,24 +15,6 @@
 CREATE DATABASE IF NOT EXISTS `projetairsoft` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `projetairsoft`;
 
--- Listage de la structure de la table projetairsoft. t_accessory
-CREATE TABLE IF NOT EXISTS `t_accessory` (
-  `id_accessory` int(11) NOT NULL AUTO_INCREMENT,
-  `viseur` varchar(50) DEFAULT NULL,
-  `crosse` varchar(50) DEFAULT NULL,
-  `chargeur` varchar(50) DEFAULT NULL,
-  `canon` varchar(50) DEFAULT NULL,
-  `laser` varchar(50) DEFAULT NULL,
-  `corps_arme` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`id_accessory`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
-
--- Listage des données de la table projetairsoft.t_accessory : ~1 rows (environ)
-/*!40000 ALTER TABLE `t_accessory` DISABLE KEYS */;
-INSERT INTO `t_accessory` (`id_accessory`, `viseur`, `crosse`, `chargeur`, `canon`, `laser`, `corps_arme`) VALUES
-	(1, 'Holo', 'Sans', 'Long', 'Silencieux', 'Vert', 'Classique');
-/*!40000 ALTER TABLE `t_accessory` ENABLE KEYS */;
-
 -- Listage de la structure de la table projetairsoft. t_address_user
 CREATE TABLE IF NOT EXISTS `t_address_user` (
   `id_address_user` int(11) NOT NULL AUTO_INCREMENT,
@@ -78,54 +60,6 @@ CREATE TABLE IF NOT EXISTS `t_arme_address` (
 -- Listage des données de la table projetairsoft.t_arme_address : ~0 rows (environ)
 /*!40000 ALTER TABLE `t_arme_address` DISABLE KEYS */;
 /*!40000 ALTER TABLE `t_arme_address` ENABLE KEYS */;
-
--- Listage de la structure de la table projetairsoft. t_country_user
-CREATE TABLE IF NOT EXISTS `t_country_user` (
-  `id_country_user` int(11) NOT NULL AUTO_INCREMENT,
-  `nom_pays` varchar(50) DEFAULT NULL,
-  `langue` varchar(50) DEFAULT NULL,
-  `abréviation_pays` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`id_country_user`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- Listage des données de la table projetairsoft.t_country_user : ~0 rows (environ)
-/*!40000 ALTER TABLE `t_country_user` DISABLE KEYS */;
-/*!40000 ALTER TABLE `t_country_user` ENABLE KEYS */;
-
--- Listage de la structure de la table projetairsoft. t_info_user
-CREATE TABLE IF NOT EXISTS `t_info_user` (
-  `id_info_user` int(11) NOT NULL AUTO_INCREMENT,
-  `nom` varchar(50) DEFAULT NULL,
-  `prenom` varchar(50) DEFAULT NULL,
-  `age` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id_info_user`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- Listage des données de la table projetairsoft.t_info_user : ~0 rows (environ)
-/*!40000 ALTER TABLE `t_info_user` DISABLE KEYS */;
-/*!40000 ALTER TABLE `t_info_user` ENABLE KEYS */;
-
--- Listage de la structure de la table projetairsoft. t_mail_user
-CREATE TABLE IF NOT EXISTS `t_mail_user` (
-  `id_mail_user` int(11) NOT NULL AUTO_INCREMENT,
-  `adresse_mail` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`id_mail_user`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- Listage des données de la table projetairsoft.t_mail_user : ~0 rows (environ)
-/*!40000 ALTER TABLE `t_mail_user` DISABLE KEYS */;
-/*!40000 ALTER TABLE `t_mail_user` ENABLE KEYS */;
-
--- Listage de la structure de la table projetairsoft. t_phone_user
-CREATE TABLE IF NOT EXISTS `t_phone_user` (
-  `id_phone_user` int(11) NOT NULL AUTO_INCREMENT,
-  `num_phone` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id_phone_user`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- Listage des données de la table projetairsoft.t_phone_user : ~0 rows (environ)
-/*!40000 ALTER TABLE `t_phone_user` DISABLE KEYS */;
-/*!40000 ALTER TABLE `t_phone_user` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

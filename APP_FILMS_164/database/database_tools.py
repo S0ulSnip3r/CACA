@@ -1,5 +1,4 @@
 """Outils en rapport avec la base de données.
-
 Fichier : database_tools.py
 Auteur : OM 2023.03.21
 Nécessite un fichier de configuration externe : ".env"
@@ -120,9 +119,7 @@ class ToolsBd:
             Auteur : OM 2021.03.09
             Nom : load_dump_sql_bd_init(self)
             Méthode pour charger le fichier DUMP en SQL dans le serveur MySql.
-
             autocommit=False ==> Oblige le programmeur à ordonner la confirmation (commit) de la transaction dans la BD.
-
             1) Récupérer les paramètres de la configuration dans le fichier ".env"
             2) Se connecter à la BD
             3) Tester si les instructions MySql
@@ -183,14 +180,10 @@ class ToolsBd:
     Nom : DBconnection
     Se connecter à la BD avec les paramètres de connection suivants :
         1) Dans le fichier : .env
-
     client_flag=CLIENT.MULTI_STATEMENTS ==> Indispensable pour pouvoir passer plusieurs
     requêtes en une seule fois.
-
     autocommit=False ==> Oblige le programmeur à ordonner la confirmation (commit) de la transaction dans la BD.
-
     cursorclass=pymysql.cursors.DictCursor ==> Retourne les données de la BD sous la forme d'un DICTIONNAIRE
-
 """
 
 
